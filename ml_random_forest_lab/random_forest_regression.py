@@ -15,6 +15,15 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
+print("Training data:")
+print(X_train.head())
+print("--------------")
+print(y_train.head())
+print("\nTesting data:")
+print(X_test.head())
+print("--------------")
+print(y_test.head())
+
 # Create Random Forest model
 model = RandomForestRegressor(n_estimators=100, random_state=42)
 
